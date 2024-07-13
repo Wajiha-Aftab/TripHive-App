@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/explore_img"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="374dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="20dp"
+        android:text="Explore and display new places"
+        android:textColor="#100F0F"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="385dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="20dp"
+        android:text="Browse a lot of interesting tourist offers and choose something for yourself. The world is waiting!"
+        android:textColor="#10322E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsignin"
+        android:layout_width="246dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/btn_green_shape"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Sign in"
+        android:textColor="#FAFAFA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/createAccount"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
+        android:onClick="onLabelClick"
+        android:text="Create an Account"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnsignin"
+        app:layout_constraintStart_toStartOf="@+id/btnsignin"
+        app:layout_constraintTop_toBottomOf="@+id/btnsignin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

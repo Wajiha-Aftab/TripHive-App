@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomePage">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="409dp"
+        android:layout_height="235dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/faisal_mosque"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backButton"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:background="@drawable/gradeint_blue_color"
+        android:focusable="auto"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:srcCompat="@drawable/baseline_arrow_back" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/searchview_background"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        app:defaultQueryHint="Search destination"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/islamabad_imageButton"
+        android:layout_width="113dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        app:srcCompat="@drawable/monument"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/Lahore_imageButton"
+        android:layout_width="113dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        app:srcCompat="@drawable/badshahi_mosque_two"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/hunza_imageButton"
+        android:layout_width="113dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        app:srcCompat="@drawable/hunza_vally"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/karachi_imageButton"
+        android:layout_width="113dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        app:srcCompat="@drawable/karachi" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/kallarKahar_ImageButton"
+        android:layout_width="113dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        app:srcCompat="@drawable/kallar_kahar" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/naran_kaghan_imageButton"
+        android:layout_width="113dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        app:srcCompat="@drawable/naran_kaghan" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="408dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        app:constraint_referenced_ids="karachi_imageButton,kallarKahar_ImageButton,naran_kaghan_imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow2"
+        android:layout_width="407dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="2dp"
+        app:constraint_referenced_ids="islamabad_imageButton,Lahore_imageButton,hunza_imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="384dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/flow"
+        app:layout_constraintStart_toStartOf="@+id/flow"
+        app:layout_constraintTop_toBottomOf="@+id/flow">
+
+        <TextView
+            android:id="@+id/karachi_TextView"
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="Karachi"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="637dp" />
+
+        <TextView
+            android:id="@+id/kallarKahar_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:text="Kallar Kahar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="174dp"
+            tools:layout_editor_absoluteY="637dp" />
+
+        <TextView
+            android:id="@+id/Naran_kaghan_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Naran kaghan"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="306dp"
+            tools:layout_editor_absoluteY="633dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="384dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/flow2"
+        app:layout_constraintStart_toStartOf="@+id/flow2"
+        app:layout_constraintTop_toBottomOf="@+id/flow2">
+
+        <TextView
+            android:id="@+id/isl_TextView"
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="Islamabad"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="423dp" />
+
+        <TextView
+            android:id="@+id/lahore_TextView"
+            android:layout_width="63dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="60dp"
+            android:text="Lahore"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="178dp"
+            tools:layout_editor_absoluteY="423dp" />
+
+        <TextView
+            android:id="@+id/hunza_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:text="Hunza Valley"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="284dp"
+            tools:layout_editor_absoluteY="423dp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_Rate"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:background="@drawable/gradeint_blue_color"
+        android:text="Rate Us"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="button_Rate,backButton"
+        app:flow_horizontalGap="25dp"
+        app:flow_maxElementsWrap="2"
+        app:flow_wrapMode="none"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "535556900354",
+    "project_id": "triphive-5a990",
+    "storage_bucket": "triphive-5a990.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535556900354:android:c46eaae2810d67595a891b",
+        "android_client_info": {
+          "package_name": "com.example.triphive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535556900354-j3kr3s6hitc5aegg3nt45mblh5o1iblc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.triphive",
+            "certificate_hash": "9aa3890f74d087f5dca2680d5dff2782576fce35"
+          }
+        },
+        {
+          "client_id": "535556900354-3erk8bkg6660vihm5ndgp67j932qq0p4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALTzyu33tvnKB2thlEQpO2QKv2llKuyjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535556900354-3erk8bkg6660vihm5ndgp67j932qq0p4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
